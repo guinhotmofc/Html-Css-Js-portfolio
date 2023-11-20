@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My Portfolio</title>
+</head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Alee Dev</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav><!--Desktop nav-->
+
+        <nav id="hamburguer-nav">
+            <div class="logo">Alee Dev</div>
+            <div class="hamburguer-menu">
+                <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Experiência</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Projetos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                </div>
+            </div>
+        </nav><!--Hamburguer nav-->
+
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="/assets/IMG_20200621_213517_137.jpg" alt="Alexander">
+            </div>
+
+            <div class="section_text">
+                <p class="section_text-p1">Hello, i'm</p>
+                <h1 class="title">Alexander Timóteo</h1>
+                <p class="section_text-p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn-color-2" onclick="window.open('./assets/cv.png')">
+                        Resumo cv
+                    </button>
+                    <button class="btn-color-3" onclick="location.href='./#contact'">
+                        Contato
+                    </button>
+                </div>
+                <div id="socials-container">
+
+                    <li class="socials-icon">
+                        <i class="fa-brands fa-linkedin" onclick="location.href='https:/www.linkedin.com/in/alexander-timoteo-a1b549213/'"></i>
+    
+                        <i class="fa-brands fa-github" onclick="location.href='https:/github.com/guinhotmofc'"></i>
+    
+                        <i class="fa-brands fa-instagram" onclick="location.href='https:/www.instagram.com/_alexandertm/'"></i>
+                    </li>
+                    
+                </div>
+            </div>
+        </section><!--Section profile-->
+
+        <section id="about">
+            <p class="section_text-p1">Get To know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img src="/assets/IMG_20200621_213517_137.jpg" alt="Alexander">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <i class="fa-solid fa-award" class="icon-experience"></i>
+                             <h3>Experiência</h3>
+                             <p>2+ anos <br>Desenvolvimento Frontend</p>
+                        </div>
+                        <div class="details-container">
+                            <i class="fa-solid fa-user-graduate" class="icon-education"></i>
+                            <h3>Educação</h3>
+                            <p>Tec. Desenvolvimento de sistemas<br>ETE. GOVERNADOR EDUARDO CAMPOS</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Olá! Meu nome é Alexander Timóteo, e sou um apaixonado desenvolvedor web que começou sua jornada no mundo da programação e tecnologia em 2021. Desde então, tenho mergulhado de cabeça nesse universo fascinante, buscando constantemente aprender e aprimorar minhas habilidades.
+
+                        Minha paixão pela programação é impulsionada pelo desejo de criar soluções inovadoras e funcionais para desafios digitais.</p>
+                    </div>
+                </div>
+            </div>
+        </section><!--Section About-->
+
+        <section id="skills">
+            <p class="section_text-p1">Explore My</p>
+            <h1 class="title">Habilidades</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Developer</h2>
+                        <div class="article-container">
+                            <article>
+                                <i class="fa-brands fa-html5" id="html"></i>
+                                <h3>HTML</h3>
+                                <p>Experiente</p>
+                            </article>
+                            <article>
+                                <i class="fa-brands fa-css3-alt" id="css"></i>
+                                <h3>CSS</h3>
+                                <p>Experiente</p>
+                            </article>
+                            <article>
+                                <i class="fa-brands fa-sass" id="sass"></i>
+                                <h3>SASS</h3>
+                                <p>Intermediario</p>
+                            </article>
+                            <article>
+                                <i class="fa-brands fa-square-js" id="javascript"></i>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Intermediario</p>
+                            </article>
+                            <article>
+                                <i class="fa-brands fa-react" id="react"></i>
+                                <h3>REACTJS</h3>
+                                <p>Basico</p>
+                            </article>
+                            <article>
+                                <img src="./assets/logo.png" id="m-ui" alt="material ui">
+                                <h3>Material UI</h3>
+                                <p>Intermediario</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Developer</h2>
+                        <div class="article-container">
+                            <article>
+                                <i class="fa-brands fa-node" id="node"></i>
+                                <h3>Nodejs</h3>
+                                <p>Basico</p>
+                            </article>
+                            <article>
+                                <img src="./assets/logoazuresql.png" alt="" id="img-icons">
+                                <h3>SQL</h3>
+                                <p>Basico</p>
+                            </article>
+                            <article>
+                                <img src="./assets/Postgresql_elephant.svg.png" alt="" id="img-icons">
+                                <h3>PostgreSQL</h3>
+                                <p>Basico</p>
+                            </article>
+                            <article>
+                                <i class="fa-brands fa-git-alt" id="git"></i>
+                                <h3>Git</h3>
+                                <p>Intermediario</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--Section Experience-->
+
+        <section id="project">
+            <p class="section_text-p1">Browse my projects</p>
+            <h1 class="title">Projetos</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project1.png"
+                            alt="Project1"
+                            class="project-img">
+                        </div>
+                        <h2 class="project-title">Relogio Digital</h2>
+                        <p class="section_text-p1">Projeto desenvolvido com (Html, Css e Javascript)</p>
+                        <div class="btn-container">
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/Rel-gio-Digital-Com-Html-Css-e-JavaScript'">
+                                Github
+                            </button>
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/Rel-gio-Digital-Com-Html-Css-e-JavaScript'">
+                                Demo
+                            </button> 
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project2.png"
+                            alt="Project1"
+                            class="project-img">
+                        </div>
+                        <h2 class="project-title">FlashMovies</h2>
+                        <p class="section_text-p1">Projeto desenvolvido com (React, js e api TMDB).</p>
+                        <div class="btn-container">
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/PROJETO-DE-FILMES-COM-REACT-E-API-DO-TMDB/tree/main'">
+                                Github
+                            </button>
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/PROJETO-DE-FILMES-COM-REACT-E-API-DO-TMDB/tree/main'">
+                                Demo
+                            </button> 
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+
+                        <div class="article-container">
+                            <img src="./assets/project-3.png"
+                            alt="Project1"
+                            class="project-img">
+                        </div>
+                        <h2 class="project-title">Protfolio</h2>
+                        <p class="section_text-p1">Projeto desenvolvido com (React e Sass).</p>
+                        <div class="btn-container">
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/portfolio-React-Sass'">
+                                Github
+                            </button>
+                            <button class="btn-color-2 project-btn" onclick="location.href='https:/github.com/guinhotmofc/portfolio-React-Sass'">
+                                Demo
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--Section Project--> 
+
+        <section id="contact">
+            <p class="section_text-p1">Get in Touch</p>
+            <h1 class="title">Contatos</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <i class="fa-solid fa-envelope"
+                     class="contact-icon">
+                    </i>
+                    <p><a href="mailto:aleee.dev@gmail.com
+                    " class="info-mail">aleee.dev@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fa-brands fa-linkedin" class="contact-icon"></i>
+                    <p><a href="https:/www.linkedin.com/in/alexander-timoteo-a1b549213/
+                    " class="info-mail">Linkedin</a></p>
+                </div>
+            </div>
+        </section><!--Section Contact-->
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#project">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 <span>Alexander Timóteo</span>. All Rights Reserved.</p>
+        </footer><!--Section Footer-->
+
+        <script src="script.js"></script>
+    </body>
+</html>
